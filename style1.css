@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+h1 {
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+/*Switch Button*/
+label.sbutton {
+	cursor: pointer;
+
+}
+label.sbutton input {
+	display:none;
+}
+label.sbutton span.btbg {
+	display: inline-block;
+	width: 120px;
+	height: 50px;
+	background: lightgray;
+	border-radius: 50px;
+	position: relative;
+	box-shadow: 0px 0px 3px black;
+}
+label.sbutton span.btbg span {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	box-shadow: 1px 1px 3px black;
+}
+label.sbutton input:checked + span.btbg {
+	background: #6EDC5F;
+}
+label.sbutton input:checked + span.btbg > span {
+	right: 2px;
+	left: auto;
+}
+/*Tab*/
+div.tab {
+	width: 800px;
+	background: white;
+	border: 1px solid rgba(140, 140, 140, 0.2);
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 0px 0px 3px black;
+}
+div.tab label {
+	border-left: 10px solid #cccccc;
+	flex-basis: 25%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+	background: #CDDC39;
+	cursor: pointer;
+}
+div.tab label:hover {
+	background: white;
+}
+div.tab div {
+	display:none;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	background: white;
+	height: 160px;
+	text-align: justify;
+	padding: 15px;
+	overflow: hidden;
+}
+div.tab div p {
+	margin-top: 10px;
+}
+div.tab input {
+	display:none;
+}
+#ch1:checked ~ #content1 {
+	display: block;
+}
+#ch2:checked ~ #content2 {
+	display: block;
+}
+#ch3:checked ~ #content3 {
+	display: block;
+}
+#ch4:checked ~ #content4 {
+	display: block;
+}
+#ch1:checked ~ #lb1 {
+	background: white;
+}
+#ch2:checked ~ #lb2 {
+	background: white;
+}
+#ch3:checked ~ #lb3 {
+	background: white;
+}
+#ch4:checked ~ #lb4 {
+	background: white;
+}
+/*Button*/
+button.hoverme {
+	padding: 0px 40px;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	width: 140px;
+	border-radius: 25px;
+	background: #ff7012;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	box-shadow: 0px 0px 3px black;
+}
+button.hoverme span.sp1 {
+	display: inline-block;
+	position: absolute;
+	left: 8px;
+	top: 0px;
+}
+button.hoverme span.sp2 {
+	display: inline-block;
+	position: absolute;
+	right: 4px;
+	top: 2px;
+	height: 42px;
+	width: 42px;
+	background: #ff9459 url(arrow.png) no-repeat center center;
+	background-size: 50%;
+	border-radius: 50%;
+}
